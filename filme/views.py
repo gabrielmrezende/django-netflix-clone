@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def home(request):
-    return HttpResponse("Hashflix funcionando 🚀")
+def homepage(request):
+    return render(request, "homepage.html")
